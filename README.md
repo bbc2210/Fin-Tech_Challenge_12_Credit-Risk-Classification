@@ -8,13 +8,13 @@ Credit risk poses a classification problem that’s inherently imbalanced. This 
 
 ## Overview of the Analysis
 
-Differentiating creditworthy borrowers from others is important in financial industry. Supervised learning is applied to predict such borrowers.
+Differentiating creditworthy borrowers from others is important in the financial industry. Supervised learning is applied to predict such borrowers.
 
 Borrowers' data columns are inclusive of loan_size, interest_rate, borrower_income, debt_to_income, num_of_accounts, derogatory_marks, total_debt, and loan_status. Loan_status, a binary value indicating whether a borrower's loan healthy or high-risky, is what we'd like to predict; therefore, it's defined as `target`. Other data columns are defined as `features`; they are used to train supervised learning model.
 
-Basic stages of supervised learning model is as follows: model, fit, and predict. In stage model,  we need to decide which model to mathematically best represents the real world.  In this example, `LogisticRegression(random_state=1)` is called to make such model. Now, the model is untrained;  in stage fit, we fit ( or train ) the model with data, which is `features` and `target`. Once the model is fit, in stage predict, it makes predictions for new data.
+Basic stages of supervised learning model is as followed: model, fit, and predict. In stage model,  we need to determine which model would mathematically best represent the real world.  In this example, `LogisticRegression(random_state=1)` is called to make such model. Now, the model is untrained;  in stage fit, we fit ( or train ) the model with data, which is `features` and `target`. Once the model is fit, it makes predictions for new data.
 
-To make convincing predictions, resampling method `RandomOverSampler(random_state=1)` is applied to solve a common classification problem: imbalanced classes, the size of one class greatly exceeding the other. 
+To make convincing predictions, the resampling method `RandomOverSampler(random_state=1)` is applied to solve a common classification problem: imbalanced classes, which is when the size of one class greatly exceeding the other. 
 
 
 
